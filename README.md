@@ -1,14 +1,8 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
-<div style="margin: 0 auto;">
-  <img src="https://user-images.githubusercontent.com/10525473/50372432-95dcd880-0611-11e9-9432-58de9be26b3b.png" style="width: 50px; height: 50px;" />
-   <div>
-     Jest
-   </div>
-</div>
 
 # Javascript Module Boilerplate
 The Javascript Module Boilerplate based on Javascript Standard.
-
+Based on [Jest](https://jestjs.io) and [Javascript Standard](https://standardjs.com/)
 
 ## Author
 CloverHearts
