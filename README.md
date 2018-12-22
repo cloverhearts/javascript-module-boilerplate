@@ -1,2 +1,39 @@
-# html2json
-Html to Json Object Library
+# Javascript Module Boilerplate
+The Javascript Module Boilerplate based on Javascript Standard.
+
+## Author
+CloverHearts
+
+## Npm Operations
+### clean
+```bash
+npm run clean
+```
+Clear for all outputs.
+
+### build or build:module
+```bash
+npm run build
+```
+Execute to npm chain operation with build:module.
+This operation make a new module from your source.
+
+### test
+```base
+npm run test
+```
+Execute to npm chanin operation with unit-test and checkstyle for Javascript Standard
+Unit test has using Jest Test framework.
+
+#### test:unit-test
+```bash
+npm run test:unit-test
+```
+Test for your code with Jest Test Framework.
+
+#### test:checkstyle
+```bash
+npm run test:checkstyle
+```
+Test for Your code with Javascript Standard style.
+
