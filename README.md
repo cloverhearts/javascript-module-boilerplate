@@ -3,7 +3,7 @@
 # Javascript Module Boilerplate
 The Javascript Module Boilerplate based on Javascript Standard.
 
-Based on [Jest](https://jestjs.io) and [Javascript Standard](https://standardjs.com/)
+Based on [Babel7](https://babeljs.io/), [Jest](https://jestjs.io) and [Javascript Standard](https://standardjs.com/)
 
 ## Author
 CloverHearts
