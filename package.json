@@ -1,12 +1,13 @@
 {
-  "name": "htmldoc2json",
-  "version": "0.0.1",
-  "description": "Html document to JSON",
+  "name": "javascript-module-boilerplate",
+  "version": "0.0.2",
+  "description": "Javascript Module boilerplate",
   "main": "index.js",
   "scripts": {
     "clean": "node_modules/.bin/rimraf ./dist",
     "build": "node_modules/.bin/npm-run-all clean build:*",
     "build:module": "node_modules/.bin/webpack --config webpack.config.js",
+    "build:doc": "node_modules/.bin/jsdoc -d doc src/**/*.js",
     "test": "node_modules/.bin/npm-run-all test:*",
     "test:unit-test": "node_modules/.bin/jest --config jest.config.js",
     "test:checkstyle": "node_modules/.bin/standard --verbose"
@@ -36,8 +37,8 @@
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.2",
     "jest": "^23.6.0",
+    "jsdoc": "^3.5.5",
     "npm-run-all": "^4.1.5",
-    "quill": "^1.3.6",
     "regenerator-runtime": "^0.13.1",
     "rimraf": "^2.6.2",
     "snazzy": "^8.0.0",

@@ -4,9 +4,21 @@
 The Javascript Module Boilerplate based on Javascript Standard.
 
 Based on [Babel7](https://babeljs.io/), [Jest](https://jestjs.io) and [Javascript Standard](https://standardjs.com/)
+with [JSDoc3](http://usejsdoc.org/)
 
 ## Author
 CloverHearts
+
+## Support Features
+### Transpiling from es6 javascript to es5
+
+### Support Javascript documentation
+
+### Support create single module file
+
+### Support Jest Testcase
+
+### Support es6 module import
 
 ## Npm Operations
 ### clean
@@ -22,6 +34,11 @@ npm run build
 Execute to npm chain operation with build:module.
 
 This operation make a new module from your source.
+
+### Generate Document for JS Module.
+```bash
+
+```
 
 ### test
 ```base

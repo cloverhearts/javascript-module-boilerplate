@@ -1,4 +1,4 @@
 import doc from '../index'
-test('two plus two is four', () => {
+test('print test message', () => {
   console.log(new doc().message())
 });
