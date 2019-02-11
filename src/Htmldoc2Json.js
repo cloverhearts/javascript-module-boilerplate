@@ -1,6 +1,20 @@
+
+/**
+ * defined class Htmldoc2Json.
+ *
+ * @class Htmldoc2Json
+ */
 class Htmldoc2Json {
-  message () {
-    return 'test message'
+
+  /**
+   *  Htmldoc2Json Methods using string parameter.
+   *
+   * @param {string} [name='cloverhearts']
+   * @returns greeting message.
+   * @memberof Htmldoc2Json
+   */
+  message (name = 'cloverhearts') {
+    return `Hello, ${name}`
   }
 }
 
