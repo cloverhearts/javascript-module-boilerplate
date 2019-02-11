@@ -37,7 +37,12 @@ This operation make a new module from your source.
 
 ### Generate Document for JS Module.
 ```bash
+npm run build
+```
+or
 
+```bash
+npm run build:doc
 ```
 
 ### test
