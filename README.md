@@ -9,6 +9,17 @@ with [JSDoc3](http://usejsdoc.org/)
 ## Author
 CloverHearts
 
+## Support Features
+### Transpiling from es6 javascript to es5
+
+### Support Javascript documentation
+
+### Support create single module file
+
+### Support Jest Testcase
+
+### Support es6 module import
+
 ## Npm Operations
 ### clean
 ```bash
