@@ -4,25 +4,38 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"]
+            presets: [
+              [
+                "@babel/preset-env",
+                {
+                  targets: {
+                    browsers: ["last 2 versions"]
+                  },
+                  modules: false // Needed for tree shaking to work.
+                }
+              ]
+            ],
+            plugins: ["@babel/plugin-transform-modules-umd"]
           }
         }
       }
     ]
   },
-
+  target: "node", // or web
   entry: {
-    htmldoc2json: "./index.js"
+    htmldoc2json: path.resolve(__dirname, "index.js")
   },
 
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    libraryTarget: "umd",
+    umdNamedDefine: true
   },
 
   mode: "production",
