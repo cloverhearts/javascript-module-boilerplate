@@ -1,29 +1,31 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /(node_modules|bower_components)/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
         }
       }
-    }]
+    ]
   },
 
   entry: {
-    'htmldoc2json': './index.js'
+    htmldoc2json: "./index.js"
   },
 
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist")
   },
 
-  mode: 'production',
+  mode: "production",
 
   optimization: {
     splitChunks: {
@@ -33,8 +35,8 @@ module.exports = {
           test: /[\\/]node_modules[\\/]/
         }
       },
-      filename: '[name].min.js',
-      chunks: 'async',
+      filename: "[name].min.js",
+      chunks: "async",
       minChunks: 1,
       minSize: 30000,
       name: true
@@ -43,5 +45,5 @@ module.exports = {
   stats: {
     colors: true
   },
-  devtool: 'source-map'
-}
+  devtool: "source-map"
+};
