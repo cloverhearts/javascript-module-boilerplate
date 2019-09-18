@@ -1,13 +1,13 @@
 {
   "name": "javascript-module-boilerplate",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Javascript Module boilerplate",
   "main": "dist/htmldoc2json.js",
   "scripts": {
     "clean": "node_modules/.bin/rimraf ./dist",
     "build": "node_modules/.bin/npm-run-all clean build:*",
     "build:module": "node_modules/.bin/webpack --config webpack.config.js",
-    "build:doc": "node_modules/.bin/jsdoc -d doc src/**/*.js",
+    "build:doc": "node_modules/.bin/jsdoc -d document ./src/Htmldoc2Json.js",
     "test": "node_modules/.bin/npm-run-all test:*",
     "test:unit-test": "node_modules/.bin/jest --config jest.config.js",
     "test:checkstyle": "node_modules/.bin/standard --verbose"
@@ -24,7 +24,8 @@
     "javascript",
     "webpack",
     "library",
-    "stater"
+    "stater",
+    "kit"
   ],
   "author": "CloverHearts",
   "license": "MIT",
@@ -36,6 +37,7 @@
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@babel/register": "^7.6.0",
+    "@babel/plugin-transform-modules-umd": "^7.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
