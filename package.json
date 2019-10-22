@@ -1,13 +1,15 @@
 {
   "name": "javascript-module-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Javascript Module boilerplate",
   "main": "dist/htmldoc2json.js",
   "scripts": {
     "clean": "node_modules/.bin/rimraf ./dist",
-    "build": "node_modules/.bin/npm-run-all clean build:*",
+    "build": "node_modules/.bin/npm-run-all clean fix:* build:*",
     "build:module": "node_modules/.bin/webpack --config webpack.config.js",
     "build:doc": "node_modules/.bin/jsdoc -d document ./src/Htmldoc2Json.js",
+    "fix": "npm-run-all clean fix:*",
+    "fix:style": "node_modules/.bin/standard --fix",
     "test": "node_modules/.bin/npm-run-all test:*",
     "test:unit-test": "node_modules/.bin/jest --config jest.config.js",
     "test:checkstyle": "node_modules/.bin/standard --verbose"
